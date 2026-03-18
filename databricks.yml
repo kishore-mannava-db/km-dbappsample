@@ -1,0 +1,25 @@
+bundle:
+  name: lakebase_track_eval
+
+sync:
+  exclude:
+    - .venv/
+    - frontend/node_modules/
+    - frontend/src/
+    - frontend/public/
+    - frontend/package-lock.json
+    - tests/
+    - __pycache__/
+    - .pytest_cache/
+    - "*.pyc"
+
+include:
+  - resources/app_deployment.yml
+
+targets:
+  dev:
+    mode: development
+    default: true
+    workspace:
+      host: https://adb-7405611631912143.3.azuredatabricks.net
+      root_path: /Workspace/Users/${workspace.current_user.userName}/.bundle/${bundle.name}/${bundle.target}

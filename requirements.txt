@@ -1,0 +1,6 @@
+fastapi
+uvicorn[standard]
+pydantic
+psycopg2-binary==2.9.10
+databricks-sdk==0.61.0
+python-dotenv

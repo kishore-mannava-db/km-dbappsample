@@ -1,0 +1,9 @@
+resources:
+  apps:
+    lakebase_track_app:
+      name: dab-lakebase-track-eval
+      description: "Lakebase OLTP Evaluation Track — 50-item eval with React frontend"
+      source_code_path: ${workspace.file_path}
+      permissions:
+        - level: CAN_USE
+          group_name: users

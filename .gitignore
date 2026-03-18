@@ -1,0 +1,10 @@
+.venv/
+frontend/node_modules/
+__pycache__/
+*.pyc
+.pytest_cache/
+.databricks/
+.vscode/
+memory/
+frontend/build/
+*.pdf
